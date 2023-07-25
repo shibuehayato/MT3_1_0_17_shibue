@@ -610,6 +610,16 @@ public:
 		}
 	}
 
+	static bool IsCollision(const Sphere& s1, const Sphere& s2) {
+		float distance = Length(Subtract(s2.center, s1.center));
+
+		if (distance <= s1.radius + s2.radius) {
+			return	true;
+		}
+
+		return false;
+
+	}
 
 	static void DrawGrid(const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewportMatrix)
 	{
