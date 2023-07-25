@@ -1,4 +1,5 @@
-﻿﻿#pragma once
+﻿#pragma once
+
 //３次元ベクトル
 struct Vector3 final
 {
